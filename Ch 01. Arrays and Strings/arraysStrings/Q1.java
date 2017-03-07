@@ -23,7 +23,7 @@ public class Q1 {
 
 		for (int i = 0; i < str.length(); i++) {
 			int val = str.charAt(i); // return the ASCII value of a character
-			System.out.println(val);
+			// System.out.println(val); // Check output for debug
 
 			if (char_set[val]) // check if has before
 				return false; // has, return not unique.
