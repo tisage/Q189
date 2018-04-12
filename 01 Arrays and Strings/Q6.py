@@ -3,7 +3,7 @@
 # if compressed string >= original string, return original
 
 
-def StringCompress(string):
+def stringCompress(string):
     if len(string) == 0:
         return string
     # Use compressedParts list
@@ -32,4 +32,4 @@ def StringCompress(string):
 
 if __name__ == "__main__":
     import sys
-    print(StringCompress(sys.argv[-1]))
+    print(stringCompress(sys.argv[-1]))

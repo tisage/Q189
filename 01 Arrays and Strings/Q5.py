@@ -2,20 +2,20 @@
 # three cases: replace, remove, insert
 
 
-def OneAway(str1, str2):
+def oneAway(str1, str2):
     if len(str1) == len(str2):
-        return OneEditReplace(str1, str2)
+        return oneEditReplace(str1, str2)
     elif len(str1) + 1 == len(str2):
-        return OneEditInsert(str1, str2)
+        return oneEditInsert(str1, str2)
     elif len(str1) - 1 == len(str2):
-        return OneEditInsert(str2, str1)
+        return oneEditInsert(str2, str1)
     else:
         return False
 
 # search and check by each character
 # editedCount > 1, return false
 
-def OneEditReplace(str1, str2):
+def oneEditReplace(str1, str2):
     edited = False
     for c1, c2 in zip(str1, str2):
         if c1 != c2:
@@ -27,7 +27,7 @@ def OneEditReplace(str1, str2):
 # shirft case, searfh from two strings by character
 # if edited, cursor index from longer string shift +1
 # else move both cursor index
-def OneEditInsert(str1, str2):
+def oneEditInsert(str1, str2):
     edited = False
     i, j = 0, 0
     while i < len(str1) and j < len(str2):
@@ -44,4 +44,4 @@ def OneEditInsert(str1, str2):
 
 if __name__ == "__main__":
     import sys
-    print(OneAway(sys.argv[-2], sys.argv[-1]))
+    print(oneAway(sys.argv[-2], sys.argv[-1]))
