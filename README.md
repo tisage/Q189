@@ -10,4 +10,7 @@ Since 01/27/2017
 
 ## Python
 
-- Chapter 1
+| Chapters   |  Topics  |
+|:----------:|:--------:|
+| 1 | Arrays and Strings|
+| 2 | Linked Lists|
